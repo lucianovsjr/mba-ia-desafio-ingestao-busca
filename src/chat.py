@@ -1,4 +1,8 @@
+import logging
+
 from search import search_and_answer
+
+logger = logging.getLogger(__name__)
 
 
 def main():
@@ -19,6 +23,7 @@ def main():
             answer = search_and_answer(question)
             print(f"RESPOSTA: {answer}\n")
         except Exception as e:
+            logger.error("Erro ao processar pergunta: %s", e, exc_info=True)
             print(f"Erro ao processar pergunta: {e}\n")
 
 

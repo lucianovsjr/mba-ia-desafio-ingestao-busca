@@ -27,7 +27,7 @@ Pergunta do usuário → Busca semântica → Contexto → LLM → Resposta
 
 ## Pré-requisitos
 
-- Python 3.10+
+- Python 3.11
 - Docker e Docker Compose
 
 ## Como executar
