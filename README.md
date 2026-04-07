@@ -75,7 +75,7 @@ Edite o `.env` e configure a API key do provedor desejado:
 Coloque o arquivo PDF na raiz do projeto (ou ajuste `PDF_PATH` no `.env`) e execute:
 
 ```bash
-python src/ingest.py
+python3 src/ingest.py
 ```
 
 O processo carrega o PDF, divide em chunks de 1000 caracteres (com overlap de 150), gera embeddings e armazena no PostgreSQL via pgVector.
@@ -83,7 +83,7 @@ O processo carrega o PDF, divide em chunks de 1000 caracteres (com overlap de 15
 ### 5. Chat via CLI
 
 ```bash
-python src/chat.py
+python3 src/chat.py
 ```
 
 Exemplo de uso:
